@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://spring-scene-138f.bizal9038.workers.dev/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>VIP CONTENT · Premium Digital Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #7c3aed;
+            border-radius: 2px;
+        }
+
+        /* HEADER */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #ffffff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-title {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            white-space: nowrap;
+            pointer-events: none;
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .header-title { display: block; }
+        }
+
+        .btn-telegram {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #2aa3df;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 5px 14px 5px 5px;
+            border-radius: 999px;
+            text-decoration: none;
+            white-space: nowrap;
+            box-shadow: 0 4px 14px rgba(42, 163, 223, 0.35);
+            transition: transform .2s, background .2s;
+        }
+        .btn-telegram:hover,
+        .btn-telegram:active {
+            background: #1e90c8;
+            transform: translateY(-1px);
+        }
+        .tg-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #2aa3df;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .header-actions .search-box {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(124, 58, 237, 0.1);
+            border-radius: 8px;
+            padding: 0 12px;
+            transition: border-color 0.3s;
+        }
+
+        .header-actions .search-box:focus-within {
+            border-color: #7c3aed;
+        }
+
+        .header-actions .search-box input {
+            background: none;
+            border: none;
+            color: #fff;
+            padding: 8px 8px 8px 4px;
+            font-size: 13px;
+            outline: none;
+            width: 120px;
+        }
+
+        .header-actions .search-box input::placeholder {
+            color: #6b7280;
+        }
+
+        .header-actions .search-box i {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .header-actions .search-box input {
+                width: 80px;
+                font-size: 12px;
+            }
+            .header-actions .search-box {
+                padding: 0 8px;
+            }
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 28px 16px 16px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            color: #9ca3af;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* ===== PROMO BANNER COM TIMER ===== */
+
+        .promo-banner {
+            background: linear-gradient(135deg, #1a0a0a, #2a0a0a);
+            border: 2px solid rgba(220, 38, 38, 0.3);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin: 8px 12px 12px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promo-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.05) 0%, transparent 70%);
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.02);
+            }
+        }
+
+        .promo-banner .promo-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fbbf24;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .promo-banner .promo-label i {
+            color: #dc2626;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+        }
+
+        .promo-banner .timer-display {
+            font-size: 42px;
+            font-weight: 900;
+            color: #dc2626;
+            letter-spacing: 3px;
+            font-variant-numeric: tabular-nums;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 40px rgba(220, 38, 38, 0.2);
+            line-height: 1.1;
+        }
+
+        .promo-banner .timer-display .colon {
+            color: #fbbf24;
+            margin: 0 2px;
+        }
+
+        .promo-banner .timer-sub {
+            font-size: 11px;
+            color: #9ca3af;
+            margin-top: 2px;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 1px;
+        }
+
+        .promo-banner .timer-sub strong {
+            color: #dc2626;
+        }
+
+        .promo-banner .timer-bar {
+            width: 100%;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-top: 8px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .promo-banner .timer-bar .fill {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #dc2626, #fbbf24);
+            border-radius: 10px;
+            transition: width 1s linear;
+        }
+
+        @media (min-width: 640px) {
+            .promo-banner {
+                padding: 20px 28px;
+                margin: 12px 20px 16px;
+                border-radius: 20px;
+            }
+            .promo-banner .timer-display {
+                font-size: 56px;
+            }
+            .promo-banner .promo-label {
+                font-size: 14px;
+            }
+            .promo-banner .timer-sub {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .promo-banner .timer-display {
+                font-size: 72px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .promo-banner .timer-display {
+                font-size: 32px;
+            }
+            .promo-banner {
+                padding: 12px 14px;
+                margin: 6px 8px 10px;
+            }
+            .promo-banner .promo-label {
+                font-size: 10px;
+            }
+        }
+
+        /* GRID */
+
+        .grid-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 8px 12px 32px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .grid {
+                gap: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 18px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        /* CARD */
+
+        .card {
+            background: #141414;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(124, 58, 237, 0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            animation: fadeUp 0.4s ease forwards;
+            opacity: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(124, 58, 237, 0.25);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.08);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card.hidden {
+            display: none;
+        }
+
+        /* CARD DESTAQUE */
+
+        .card-highlight {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, #141414, #1a0a2e);
+            border: 2px solid rgba(124, 58, 237, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card-highlight .highlight-badge {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card-highlight .card-media {
+            aspect-ratio: 21/9;
+        }
+
+        .card-highlight .card-body .title-row h3 {
+            font-size: 16px;
+        }
+
+        .card-highlight .card-body .title-row h3 span {
+            color: #a78bfa;
+        }
+
+        .card-highlight .card-body .price-row .current {
+            font-size: 22px;
+            color: #fbbf24;
+        }
+
+        @media (min-width: 640px) {
+            .card-highlight .card-body .title-row h3 {
+                font-size: 18px;
+            }
+            .card-highlight .card-body .price-row .current {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-highlight .card-body .title-row h3 {
+                font-size: 13px;
+            }
+            .card-highlight .card-body .price-row .current {
+                font-size: 17px;
+            }
+            .card-highlight .highlight-badge {
+                font-size: 8px;
+                padding: 2px 10px;
+                top: 8px;
+                left: 8px;
+            }
+        }
+
+        /* CARD MEDIA */
+
+        .card-media {
+            position: relative;
+            aspect-ratio: 16/9;
+            background: #0a0a0a;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover .card-media img {
+            transform: scale(1.03);
+        }
+
+        .card-media .play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        .card-media .play-overlay i {
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.85);
+            text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .card-media:hover .play-overlay i {
+            transform: scale(1.08);
+            color: #a78bfa;
+        }
+
+        .card-media .badge-stock {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+            color: #fbbf24;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 12px;
+            z-index: 2;
+            border: 1px solid rgba(251, 191, 36, 0.15);
+        }
+
+        /* CARD BODY */
+
+        .card-body {
+            padding: 12px 14px 14px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-body .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .card-body .title-row h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .card-body .title-row .discount-text {
+            font-size: 11px;
+            font-weight: 800;
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.12);
+            padding: 2px 8px;
+            border-radius: 12px;
+            white-space: nowrap;
+            border: 1px solid rgba(251, 191, 36, 0.1);
+        }
+
+        .card-body .stats {
+            display: flex;
+            gap: 12px;
+            font-size: 11px;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+
+        .card-body .stats i {
+            margin-right: 3px;
+            color: #7c3aed;
+        }
+
+        .card-body .description {
+            font-size: 12px;
+            color: #e5e7eb;
+            margin-top: 0;
+            line-height: 1.5;
+            overflow: visible;
+        }
+
+        .card-body .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 8px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+        }
+
+        .card-body .features span {
+            display: inline-flex;
+            align-items: center;
+            font-size: 10px;
+            color: #6b7280;
+            background: #1b1b1b;
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px solid #2d2f33;
+        }
+
+        .card-body .features span i {
+            color: #6b7280;
+            margin-right: 4px;
+            font-size: 6px;
+        }
+
+        .card-body .price-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .card-body .price-row .original {
+            font-size: 13px;
+            color: #6b7280;
+            text-decoration: line-through;
+        }
+
+        .card-body .price-row .current {
+            font-size: 18px;
+            font-weight: 800;
+            color: #a78bfa;
+        }
+
+        .card-body .actions {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .card-body .actions .btn {
+            flex: 1;
+            min-width: 0;
+            white-space: nowrap;
+            padding: 8px 6px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 11px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .card-body .actions .btn:active {
+            transform: scale(0.95);
+        }
+
+        .card-body .actions .btn-preview {
+            flex: 5;
+            background: #1f1b2e;
+            color: #fff;
+            border: 1px solid #2f2a44;
+        }
+
+        .card-body .actions .btn-preview:hover {
+            background: #2a2540;
+            color: #fff;
+        }
+
+        .card-body .actions .btn-buy {
+            flex: 7;
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            box-shadow: none;
+        }
+
+        .card-body .actions .btn-buy:hover {
+            background: #1d4ed8;
+            color: #fff;
+            box-shadow: none;
+            transform: translateY(-1px);
+        }
+
+        /* ===== MODAL CORRIGIDO - SEM ERROS ===== */
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(12px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-box {
+            background: #141414;
+            border-radius: 16px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 900px;
+            border: 1px solid rgba(124, 58, 237, 0.12);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            max-height: 98vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal.open .modal-box {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            flex-shrink: 0;
+        }
+
+        .modal-header h3 {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .modal-header .close {
+            background: none;
+            border: none;
+            color: #6b7280;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0 4px;
+            transition: color 0.2s;
+        }
+
+        .modal-header .close:hover {
+            color: #fff;
+        }
+
+        .modal-video-wrap {
+            position: relative;
+            background: #000;
+            aspect-ratio: 16/9;
+            flex-shrink: 0;
+        }
+
+        .modal-video-wrap video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #000;
+        }
+
+        .modal-body {
+            padding: 14px 16px 16px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .modal-body .desc {
+            color: #9ca3af;
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 4px 0 10px;
+        }
+
+        .modal-body .price-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-body .price-row .original {
+            font-size: 14px;
+            color: #6b7280;
+            text-decoration: line-through;
+        }
+
+        .modal-body .price-row .current {
+            font-size: 22px;
+            font-weight: 800;
+            color: #a78bfa;
+        }
+
+        .modal-body .btn-buy {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            color: #fff;
+            box-shadow: 0 4px 25px rgba(124, 58, 237, 0.3);
+            transition: all 0.2s;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .modal-body .btn-buy:hover {
+            box-shadow: 0 6px 35px rgba(124, 58, 237, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .modal-body .btn-buy:active {
+            transform: scale(0.97);
+        }
+
+        /* BUBBLES */
+
+        .bubble-container {
+            position: fixed;
+            bottom: 16px;
+            left: 12px;
+            z-index: 80;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            pointer-events: none;
+            max-width: calc(100vw - 24px);
+        }
+
+        .bubble {
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(124, 58, 237, 0.12);
+            border-radius: 10px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+            animation: slideInLeft 0.4s ease forwards, fadeOutRight 0.4s ease 5s forwards;
+            pointer-events: auto;
+            max-width: 280px;
+            min-width: 200px;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeOutRight {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+        }
+
+        .bubble .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .bubble .info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .bubble .name {
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bubble .action {
+            font-size: 9px;
+            color: #9ca3af;
+        }
+
+        .bubble .product {
+            font-size: 10px;
+            color: #a78bfa;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bubble .time {
+            font-size: 8px;
+            color: #6b7280;
+            margin-top: 1px;
+        }
+
+        .bubble .badge {
+            background: #22c55e;
+            color: #fff;
+            font-size: 8px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        /* INFO CARD */
+
+        .info-card {
+            background: #141414;
+            border-radius: 16px;
+            padding: 24px 20px;
+            margin-top: 16px;
+            border: 1px solid rgba(124, 58, 237, 0.06);
+            text-align: center;
+        }
+
+        .info-card h3 {
+            font-size: 18px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .info-card p {
+            color: #9ca3af;
+            font-size: 13px;
+            max-width: 400px;
+            margin: 4px auto 12px;
+            line-height: 1.5;
+        }
+
+        .info-card .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 20px;
+            font-size: 12px;
+        }
+
+        .info-card .links a {
+            color: #6b7280;
+            transition: color 0.2s;
+        }
+
+        .info-card .links a:hover {
+            color: #a78bfa;
+        }
+
+        .info-card .features-mini {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin: 8px 0 12px;
+        }
+
+        .info-card .features-mini span {
+            color: #6b7280;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .info-card .features-mini span i {
+            color: #7c3aed;
+            font-size: 11px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 20px 16px 16px;
+            color: #4a4a5a;
+            font-size: 11px;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            margin-top: 8px;
+        }
+
+        /* COUNT */
+
+        .count {
+            color: #6b7280;
+            font-size: 12px;
+            padding: 4px 4px 8px;
+            text-align: right;
+        }
+
+        @media (max-width: 420px) {
+            .card-body .title-row h3 {
+                font-size: 12px;
+            }
+            .card-body .price-row .current {
+                font-size: 15px;
+            }
+            .card-body .actions .btn {
+                font-size: 9px;
+                padding: 6px 2px;
+                gap: 3px;
+            }
+            .card-body .description {
+                font-size: 12px;
+            }
+            .header-actions .search-box input {
+                width: 70px;
+                font-size: 11px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .card-body .title-row h3 {
+                font-size: 16px;
+            }
+            .card-body .price-row .current {
+                font-size: 20px;
+            }
+            .card-body .actions .btn {
+                font-size: 12px;
+                padding: 10px 8px;
+            }
+            .bubble {
+                max-width: 320px;
+                padding: 10px 14px;
+            }
+        }
+
+        /* ============================================================
+   ===== POPUP DE PAGAMENTO =====
+   ============================================================ */
+
+        .payment-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999999;
+            padding: 20px;
+        }
+
+        .payment-popup {
+            width: 100%;
+            max-width: 430px;
+            background: #141414;
+            border: 1px solid #292929;
+            border-radius: 20px;
+            padding: 30px 24px 24px;
+            position: relative;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.55);
+            text-align: center;
+            color: #ffffff;
+            animation: paymentPopupIn 0.2s ease-out;
+        }
+
+        .payment-popup h2 {
+            margin: 0 0 8px;
+            font-size: 23px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .payment-popup p {
+            margin: 0 0 22px;
+            color: #999999;
+            font-size: 14px;
+        }
+
+        .payment-close {
+            position: absolute;
+            top: 9px;
+            right: 13px;
+            width: 34px;
+            height: 34px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 28px;
+            line-height: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .payment-close:hover {
+            background: #252525;
+            color: #fff;
+        }
+
+        /* ===== BOTÕES ===== */
+
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .payment-option {
+            width: 100%;
+            min-height: 64px;
+            border: none;
+            border-radius: 13px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.18s ease, filter 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        /* IMAGEM DO MÉTODO */
+
+        .payment-option img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        /* TEXTO */
+
+        .payment-option span {
+            flex: 1;
+            text-align: left;
+        }
+
+        /* PAYPAL */
+
+        .payment-option.paypal {
+            background: #003087;
+        }
+
+        .payment-option.paypal:hover {
+            background: #0042b5;
+        }
+
+        /* CRYPTO */
+
+        .payment-option.crypto {
+            background: #242424;
+            border: 1px solid #363636;
+        }
+
+        .payment-option.crypto:hover {
+            background: #303030;
+        }
+
+        /* BINANCE */
+
+        .payment-option.binance {
+            background: #F3BA2F;
+            color: #111;
+        }
+
+        .payment-option.binance:hover {
+            background: #ffc83d;
+        }
+
+        /* CASH APP */
+
+        .payment-option.cashapp {
+            background: #00d632;
+            color: #ffffff;
+        }
+
+        .payment-option.cashapp:hover {
+            background: #00c52e;
+        }
+
+        /* STRIPE */
+
+        .payment-option.stripe {
+            background: #635bff;
+            color: #ffffff;
+        }
+
+        .payment-option.stripe:hover {
+            background: #5149e6;
+        }
+
+        /* HOVER */
+
+        .payment-option:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+        }
+
+        /* CLICK */
+
+        .payment-option:active {
+            transform: scale(0.98);
+        }
+
+        /* ANIMAÇÃO */
+
+        @keyframes paymentPopupIn {
+            from {
+                opacity: 0;
+                transform: scale(0.94);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="logo">VIP <span>CONTENT</span></div>
+        <span class="header-title">TELEGRAM STORE</span>
+        <div class="header-actions">
+            <a href="https://t.me/alcontentes" target="_blank" rel="noopener" class="btn-telegram">
+                <span class="tg-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+                </span>
+                <span>DM ME</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <h1>Premium Digital Content</h1>
+        <p>Exclusive packs for creators</p>
+    </section>
+
+    <!-- ===== PROMO BANNER COM TIMER ===== -->
+    <div class="promo-banner" id="promoBanner">
+        <div class="promo-label">
+            <i class="fa-solid fa-clock"></i> FLASH SALE · LIMITED TIME OFFER
+            <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="timer-display" id="timerDisplay">
+            <span id="timerHours">00</span><span class="colon">:</span>
+            <span id="timerMinutes">09</span><span class="colon">:</span>
+            <span id="timerSeconds">32</span>
+        </div>
+        <div class="timer-sub">
+            ⚡ <strong>HURRY!</strong> Offer ends in <strong id="timeLeftText">9 minutes and 32 seconds</strong> ⚡
+        </div>
+        <div class="timer-bar">
+            <div class="fill" id="timerBarFill" style="width: 63.5556%; background: linear-gradient(90deg, rgb(220, 38, 38), rgb(251, 191, 36));"></div>
+        </div>
+    </div>
+
+    <!-- ===== GRID ===== -->
+    <div class="grid-container">
+        <div class="grid" id="contentGrid">
+        <div class="card-highlight">
+          <div class="card-media" data-id="1">
+            <img src="./VIP CONTENT · Premium Digital Content_files/geervb.jpg" alt="ALL CONTENT &amp; VIUP CHÃNNEL" loading="lazy">
+            <div class="play-overlay">
+              <i class="fa-solid fa-play-circle"></i>
+            </div>
+            <span class="badge-discount">-49%</span>
+            <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 13 left</span>
+            <span class="highlight-badge">⭐ DESTAQUE</span>
+          </div>
+          <div class="card-body">
+            <div class="title-row">
+              <h3>ALL CONTENT &amp; VIUP CHÃNNEL</h3>
+              <span class="discount-text">-49%</span>
+            </div>
+            <div class="stats">
+              <span><i class="fa-solid fa-shopping-bag"></i> undefined purchases</span>
+            </div>
+            <p class="description">Premium template kit for creators.</p>
+            <div class="features">
+              <span><i class="fa-solid fa-circle"></i> PRO</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 20000+ FILES</span><span><i class="fa-solid fa-circle"></i> 6TBB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+            </div>
+            <div class="price-row">
+              <span class="original">$399</span>
+              <span class="current">$199</span>
+            </div>
+            <div class="actions">
+              <button class="btn btn-preview" data-id="1">
+                <i class="fa-solid fa-play"></i> PREVIEW
+              </button>
+              <button class="btn btn-buy" data-id="1">
+                <i class="fa-brands fa-telegram"></i> BUY NOW $199
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="count" id="countDisplay">32 titles</div>
+
+        <!-- ===== CARDS NORMAIS ===== -->
+        <div class="grid" id="normalGrid">
+          <div class="card" style="animation-delay:0s" data-title="rap3">
+            <div class="card-media" data-id="24">
+              <img src="./VIP CONTENT · Premium Digital Content_files/4qaua7.png" alt="RAP3" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 50 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>RAP3</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 19 purchases</span>
+              </div>
+              <p class="description">.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 400+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="24">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="24">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.03s" data-title="savannah">
+            <div class="card-media" data-id="26">
+              <img src="./VIP CONTENT · Premium Digital Content_files/kaejkq.webp" alt="SAVANNAH" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 19 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>SAVANNAH</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 71 purchases</span>
+              </div>
+              <p class="description">Social media content pack.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 250+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="26">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="26">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.06s" data-title="teens highschool ">
+            <div class="card-media" data-id="21">
+              <img src="./VIP CONTENT · Premium Digital Content_files/c2kok1.webp" alt="TEENS HIGHSCHOOL " loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-51%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 16 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>TEENS HIGHSCHOOL </h3>
+                <span class="discount-text">-51%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 63 purchases</span>
+              </div>
+              <p class="description">Premium collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 500+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$80</span>
+                <span class="current">$40</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="21">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="21">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $40
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.09s" data-title="blackmail">
+            <div class="card-media" data-id="34">
+              <img src="./VIP CONTENT · Premium Digital Content_files/rnbz2x.webp" alt="BLACKMAIL" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 87 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>BLACKMAIL</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> undefined purchases</span>
+              </div>
+              <p class="description">Animation content kit.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 1000+ FILES</span><span><i class="fa-solid fa-circle"></i> 100GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$100</span>
+                <span class="current">$50</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="34">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="34">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $50
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.12s" data-title="snapchat">
+            <div class="card-media" data-id="33">
+              <img src="./VIP CONTENT · Premium Digital Content_files/mzroyo.webp" alt="SNAPCHAT" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-51%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 63 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>SNAPCHAT</h3>
+                <span class="discount-text">-51%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> undefined purchases</span>
+              </div>
+              <p class="description">LEAKS SNAPCHAT.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 800+ FILES</span><span><i class="fa-solid fa-circle"></i> 50GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$111</span>
+                <span class="current">$55</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="33">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="33">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $55
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.15s" data-title="new pyt stuff">
+            <div class="card-media" data-id="25">
+              <img src="./VIP CONTENT · Premium Digital Content_files/74lnul.png" alt="NEW PYT STUFF" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 76 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>NEW PYT STUFF</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 29 purchases</span>
+              </div>
+              <p class="description">BEST FOLDER  PYT.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 550+ FILES</span><span><i class="fa-solid fa-circle"></i> 20GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="25">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="25">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.18s" data-title="father and daughter">
+            <div class="card-media" data-id="14">
+              <img src="./VIP CONTENT · Premium Digital Content_files/0pkbos.jpg" alt="FATHER AND DAUGHTER" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 10 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>FATHER AND DAUGHTER</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 25 purchases</span>
+              </div>
+              <p class="description">PEDOM FATHER .</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 400+ FILES</span><span><i class="fa-solid fa-circle"></i> 7GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$80</span>
+                <span class="current">$40</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="14">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="14">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $40
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.21s" data-title="snapgod full ed">
+            <div class="card-media" data-id="19">
+              <img src="./VIP CONTENT · Premium Digital Content_files/k2s1qv.webp" alt="SNAPGOD FULL ED" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 20 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>SNAPGOD FULL ED</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 82 purchases</span>
+              </div>
+              <p class="description">HOT collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 1500+ FILES</span><span><i class="fa-solid fa-circle"></i> 80GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$120</span>
+                <span class="current">$60</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="19">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="19">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $60
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.24s" data-title="mega sex cp">
+            <div class="card-media" data-id="15">
+              <img src="./VIP CONTENT · Premium Digital Content_files/56e8vq.jpg" alt="MEGA SEX CP" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 72 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>MEGA SEX CP</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 44 purchases</span>
+              </div>
+              <p class="description">FAMILI CP COLLECTION.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 300+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="15">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="15">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.27s" data-title="real incest">
+            <div class="card-media" data-id="29">
+              <img src="./VIP CONTENT · Premium Digital Content_files/6iuyoe.jpg" alt="REAL INCEST" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 64 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>REAL INCEST</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 54 purchases</span>
+              </div>
+              <p class="description">⚜️REAL INCEST⚜️</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 500+ FILES</span><span><i class="fa-solid fa-circle"></i> 22GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="29">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="29">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.3s" data-title="all cp">
+            <div class="card-media" data-id="16">
+              <img src="./VIP CONTENT · Premium Digital Content_files/b37xde.webp" alt="ALL CP" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 87 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>ALL CP</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 31 purchases</span>
+              </div>
+              <p class="description">ALL CP.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 5000+ FILES</span><span><i class="fa-solid fa-circle"></i> 120GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$199</span>
+                <span class="current">$100</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="16">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="16">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $100
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.32999999999999996s" data-title="cp 3-4">
+            <div class="card-media" data-id="3">
+              <img src="./VIP CONTENT · Premium Digital Content_files/bmyj6o.webp" alt="CP 3-4" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 89 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>CP 3-4</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 28 purchases</span>
+              </div>
+              <p class="description">08-12Y</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> EXCLUSIVE</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 600+ FILES</span><span><i class="fa-solid fa-circle"></i> 15GB</span><span><i class="fa-solid fa-circle"></i> 4K</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="3">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="3">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0s" data-title="black girls">
+            <div class="card-media" data-id="12">
+              <img src="./VIP CONTENT · Premium Digital Content_files/qs51un.jpg" alt="BLACK GIRLS" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 78 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>BLACK GIRLS</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 38 purchases</span>
+              </div>
+              <p class="description">content pack.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 450+ FILES</span><span><i class="fa-solid fa-circle"></i> 15GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$70</span>
+                <span class="current">$35</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="12">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="12">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $35
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.03s" data-title="darkzadiee">
+            <div class="card-media" data-id="8">
+              <img src="./VIP CONTENT · Premium Digital Content_files/d5y538.webp" alt="DARKZADIEE" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-49%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 11 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>DARKZADIEE</h3>
+                <span class="discount-text">-49%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 52 purchases</span>
+              </div>
+              <p class="description">TIKTOK FAMOUS.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 300+ FILES</span><span><i class="fa-solid fa-circle"></i> 15GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="8">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="8">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.06s" data-title="blowjob teens">
+            <div class="card-media" data-id="11">
+              <img src="./VIP CONTENT · Premium Digital Content_files/lv8b71.jpg" alt="BLOWJOB TEENS" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 18 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>BLOWJOB TEENS</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 73 purchases</span>
+              </div>
+              <p class="description">Complete collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 350+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$70</span>
+                <span class="current">$35</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="11">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="11">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $35
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.09s" data-title="izzy">
+            <div class="card-media" data-id="23">
+              <img src="./VIP CONTENT · Premium Digital Content_files/iz7jzc.webp" alt="IZZY" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 87 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>IZZY</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 36 purchases</span>
+              </div>
+              <p class="description">ZOO TEENS.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 300+ FILES</span><span><i class="fa-solid fa-circle"></i> 8GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="23">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="23">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.12s" data-title="mom son">
+            <div class="card-media" data-id="5">
+              <img src="./VIP CONTENT · Premium Digital Content_files/p58e1d.webp" alt="MOM SON" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 75 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>MOM SON</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 67 purchases</span>
+              </div>
+              <p class="description">PEDOM MOM.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> PEDOM MOM</span><span><i class="fa-solid fa-circle"></i> 300+ FILES</span><span><i class="fa-solid fa-circle"></i> 16GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$80</span>
+                <span class="current">$40</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="5">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="5">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $40
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.15s" data-title="anxious panda">
+            <div class="card-media" data-id="17">
+              <img src="./VIP CONTENT · Premium Digital Content_files/6439r5.webp" alt="ANXIOUS PANDA" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 4 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>ANXIOUS PANDA</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 12 purchases</span>
+              </div>
+              <p class="description">Premium collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> EXCLUSIVE</span><span><i class="fa-solid fa-circle"></i> 600+ FILES</span><span><i class="fa-solid fa-circle"></i> 50GB</span><span><i class="fa-solid fa-circle"></i> 4K</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$110</span>
+                <span class="current">$55</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="17">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="17">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $55
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.18s" data-title="jess">
+            <div class="card-media" data-id="32">
+              <img src="./VIP CONTENT · Premium Digital Content_files/xq7s8u.webp" alt="JESS" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 58 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>JESS</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 16 purchases</span>
+              </div>
+              <p class="description">JESS collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 100+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$80</span>
+                <span class="current">$40</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="32">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="32">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $40
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.21s" data-title="desiree garcia">
+            <div class="card-media" data-id="9">
+              <img src="./VIP CONTENT · Premium Digital Content_files/z9mlxv.webp" alt="DESIREE GARCIA" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 346 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>DESIREE GARCIA</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 43 purchases</span>
+              </div>
+              <p class="description">VIP access to exclusive content library.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> EXCLUSIVE</span><span><i class="fa-solid fa-circle"></i> VIP</span><span><i class="fa-solid fa-circle"></i> 100+ FILES</span><span><i class="fa-solid fa-circle"></i> 6GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$200</span>
+                <span class="current">$99</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="9">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="9">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $99
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.24s" data-title="belle delphine">
+            <div class="card-media" data-id="30">
+              <img src="./VIP CONTENT · Premium Digital Content_files/wn3xsm.webp" alt="BELLE DELPHINE" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-49%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 67 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>BELLE DELPHINE</h3>
+                <span class="discount-text">-49%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 22 purchases</span>
+              </div>
+              <p class="description">BELLE DELPHINE collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 400+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$75</span>
+                <span class="current">$35</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="30">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="30">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $35
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.27s" data-title="premium cp">
+            <div class="card-media" data-id="13">
+              <img src="./VIP CONTENT · Premium Digital Content_files/fsaol4.jpg" alt="PREMIUM CP" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 97 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>PREMIUM CP</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 17 purchases</span>
+              </div>
+              <p class="description">PREMIUM content collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 550+ FILES</span><span><i class="fa-solid fa-circle"></i> 9GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$100</span>
+                <span class="current">$50</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="13">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="13">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $50
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.3s" data-title="monkey app">
+            <div class="card-media" data-id="28">
+              <img src="./VIP CONTENT · Premium Digital Content_files/gal5a6.jpg" alt="MONKEY APP" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 49 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>MONKEY APP</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 14 purchases</span>
+              </div>
+              <p class="description">Business content collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 500+ FILES</span><span><i class="fa-solid fa-circle"></i> 45GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="28">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="28">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.32999999999999996s" data-title="new amelia ">
+            <div class="card-media" data-id="4">
+              <img src="./VIP CONTENT · Premium Digital Content_files/fxyfv0.webp" alt="NEW AMELIA " loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 98 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>NEW AMELIA </h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 15 purchases</span>
+              </div>
+              <p class="description">The ultimate content.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> EXCLUSIVE</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 100+ FILES</span><span><i class="fa-solid fa-circle"></i> 2GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$70</span>
+                <span class="current">$35</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="4">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="4">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $35
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0s" data-title="ava">
+            <div class="card-media" data-id="31">
+              <img src="./VIP CONTENT · Premium Digital Content_files/3dzzzw.webp" alt="AVA" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 59 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>AVA</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 37 purchases</span>
+              </div>
+              <p class="description">AVA TEENS.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 150+ FILES</span><span><i class="fa-solid fa-circle"></i> 8GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="31">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="31">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.03s" data-title="lizzy and brother">
+            <div class="card-media" data-id="6">
+              <img src="./VIP CONTENT · Premium Digital Content_files/ilo8hq.webp" alt="LIZZY AND BROTHER" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 98 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>LIZZY AND BROTHER</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 33 purchases</span>
+              </div>
+              <p class="description">SIS AND BRO, BLACKMAIL VIDEOS .</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 500+ FILES</span><span><i class="fa-solid fa-circle"></i> 21GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="6">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="6">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.06s" data-title="ayumi teen">
+            <div class="card-media" data-id="10">
+              <img src="./VIP CONTENT · Premium Digital Content_files/legzd7.jpg" alt="AYUMI TEEN" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 98 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>AYUMI TEEN</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 21 purchases</span>
+              </div>
+              <p class="description">RARE CONTENT.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 9GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="10">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="10">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.09s" data-title="13-17 teens">
+            <div class="card-media" data-id="22">
+              <img src="./VIP CONTENT · Premium Digital Content_files/6r6wcu.png" alt="13-17 TEENS" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 22 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>13-17 TEENS</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 78 purchases</span>
+              </div>
+              <p class="description">TEEN .</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> BEST TEENS</span><span><i class="fa-solid fa-circle"></i> 200+ FILES</span><span><i class="fa-solid fa-circle"></i> 9.8GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$70</span>
+                <span class="current">$35</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="22">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="22">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $35
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.12s" data-title="omegle">
+            <div class="card-media" data-id="20">
+              <img src="./VIP CONTENT · Premium Digital Content_files/1hlhak.webp" alt="OMEGLE" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-48%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 25 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>OMEGLE</h3>
+                <span class="discount-text">-48%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 95 purchases</span>
+              </div>
+              <p class="description">Exclusive  collection.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 100+ FILES</span><span><i class="fa-solid fa-circle"></i> 55GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$110</span>
+                <span class="current">$55</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="20">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="20">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $55
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.15s" data-title="baby ashlee">
+            <div class="card-media" data-id="18">
+              <img src="./VIP CONTENT · Premium Digital Content_files/vano24.webp" alt="BABY ASHLEE" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 14 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>BABY ASHLEE</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 58 purchases</span>
+              </div>
+              <p class="description">LEAKS GIRL.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> PRO</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 200+ FILES</span><span><i class="fa-solid fa-circle"></i> 15GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$60</span>
+                <span class="current">$30</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="18">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="18">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $30
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.18s" data-title="ivanka and brother">
+            <div class="card-media" data-id="7">
+              <img src="./VIP CONTENT · Premium Digital Content_files/suljhn.webp" alt="IVANKA AND BROTHER" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 2 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>IVANKA AND BROTHER</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 9 purchases</span>
+              </div>
+              <p class="description">BEST IVANKA AND BROTHER</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> EXCLUSIVE</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 1500+ FILES</span><span><i class="fa-solid fa-circle"></i> 12GB</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="7">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="7">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="animation-delay:0.21s" data-title="cp 1-2">
+            <div class="card-media" data-id="2">
+              <img src="./VIP CONTENT · Premium Digital Content_files/file" alt="CP 1-2" loading="lazy">
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">-50%</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 90 left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>CP 1-2</h3>
+                <span class="discount-text">-50%</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> 41 purchases</span>
+              </div>
+              <p class="description">SEX CONTENT 06-10Y.</p>
+              <div class="features">
+                <span><i class="fa-solid fa-circle"></i> 06-10Y</span><span><i class="fa-solid fa-circle"></i> PREMIUM</span><span><i class="fa-solid fa-circle"></i> 400+ FILES</span><span><i class="fa-solid fa-circle"></i> 10GB</span><span><i class="fa-solid fa-circle"></i> HD</span>
+              </div>
+              <div class="price-row">
+                <span class="original">$90</span>
+                <span class="current">$45</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="2">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="2">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW $45
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== INFO CARD ===== -->
+        <div class="info-card">
+            <h3>VIP CONTENT</h3>
+            <p>Premium digital content. Please review the content description before purchasing.</p>
+            <div class="features-mini">
+                <span><i class="fa-solid fa-check-circle"></i> Digital delivery</span>
+                <span><i class="fa-solid fa-check-circle"></i> Secure purchase</span>
+                <span><i class="fa-solid fa-check-circle"></i> Customer support</span>
+            </div>
+            <div class="links">
+                <a href="https://spring-scene-138f.bizal9038.workers.dev/#">Terms &amp; License</a>
+                <a href="https://spring-scene-138f.bizal9038.workers.dev/#">Privacy Policy</a>
+                <a href="https://spring-scene-138f.bizal9038.workers.dev/#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        SLAY ADM © 2026 VIP CONTENT — All rights reserved.
+    </footer>
+
+    <!-- ===== BUBBLES ===== -->
+    <div class="bubble-container" id="bubbleContainer"></div>
+
+    <!-- ===== MODAL CORRIGIDO ===== -->
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="modalTitle">Preview</h3>
+                <button class="close" id="modalClose">×</button>
+            </div>
+            <div class="modal-video-wrap">
+                <video id="modalVideo" controls="" playsinline="" preload="metadata">
+          <source src="" type="video/mp4">
+        </video>
+            </div>
+            <div class="modal-body">
+                <div class="price-row">
+                    <span class="original" id="modalOriginal">$60</span>
+                    <span class="current" id="modalPrice">$30</span>
+                </div>
+                <p class="desc" id="modalDesc">Premium digital content.</p>
+                <button class="btn-buy" id="modalBuy">
+          <i class="fa-brands fa-telegram"></i> BUY NOW
+        </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================================
+        // ===== CONFIGURAÇÃO =====
+        // ============================================================
+        const TELEGRAM_USERNAME = "alcontentes";
+
+        // ============================================================
+        // ===== TIMER - 15 MINUTOS =====
+        // ============================================================
+        let totalSeconds = 15 * 60;
+        let timerRunning = true;
+
+        function formatTime(seconds) {
+            const hrs = Math.floor(seconds / 3600);
+            const mins = Math.floor((seconds % 3600) / 60);
+            const secs = seconds % 60;
+            return {
+                hours: String(hrs).padStart(2, '0'),
+                minutes: String(mins).padStart(2, '0'),
+                seconds: String(secs).padStart(2, '0')
+            };
+        }
+
+        function updateTimer() {
+            if (!timerRunning) return;
+            const time = formatTime(totalSeconds);
+            document.getElementById('timerHours').textContent = time.hours;
+            document.getElementById('timerMinutes').textContent = time.minutes;
+            document.getElementById('timerSeconds').textContent = time.seconds;
+
+            const minsLeft = Math.floor(totalSeconds / 60);
+            const secsLeft = totalSeconds % 60;
+            let timeText = '';
+            if (minsLeft > 0) {
+                timeText = `${minsLeft} minute${minsLeft > 1 ? 's' : ''}`;
+                if (secsLeft > 0) {
+                    timeText += ` and ${secsLeft} second${secsLeft > 1 ? 's' : ''}`;
+                }
+            } else {
+                timeText = `${secsLeft} second${secsLeft > 1 ? 's' : ''}`;
+            }
+            document.getElementById('timeLeftText').textContent = timeText;
+
+            const percent = (totalSeconds / (15 * 60)) * 100;
+            const barFill = document.getElementById('timerBarFill');
+            barFill.style.width = percent + '%';
+            if (percent < 20) {
+                barFill.style.background = 'linear-gradient(90deg, #dc2626, #ef4444)';
+            } else if (percent < 50) {
+                barFill.style.background = 'linear-gradient(90deg, #fbbf24, #dc2626)';
+            } else {
+                barFill.style.background = 'linear-gradient(90deg, #dc2626, #fbbf24)';
+            }
+
+            if (totalSeconds > 0) {
+                totalSeconds--;
+            } else {
+                totalSeconds = 15 * 60;
+                const display = document.getElementById('timerDisplay');
+                display.style.transition = 'none';
+                display.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    display.style.transition = 'transform 0.3s ease';
+                    display.style.transform = 'scale(1)';
+                }, 100);
+            }
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+
+
+        // ============================================================
+        // ===== 44 PRODUTOS NORMAIS ORGANIZADOS =====
+        // ============================================================
+        const allItems = [{
+            id: 1,
+            title: "ALL CONTENT & VIUP CHÃNNEL",
+            image: "https://files.catbox.moe/geervb.jpg",
+            previewVideo: "https://files.catbox.moe/kfy96e.mp4",
+            description: "Premium template kit for creators.",
+            originalPrice: "$399",
+            price: "$199",
+            discount: "-49%",
+            stock: 13,
+            features: ["PRO", "PREMIUM", "20000+ FILES", "6TBB", "HD"]
+        }, {
+            id: 2,
+            title: "CP 1-2",
+            image: "https://pictureurl.com/api/storage/file?key=u%2Fanon%2F2cad95b8-97e3-4c8d-9b03-2988780463f4-cdsd.webp",
+            previewVideo: "https://files.catbox.moe/rlhlo9.mp4",
+            description: "SEX CONTENT 06-10Y.",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 41,
+            stock: 90,
+            features: ["06-10Y", "PREMIUM", "400+ FILES", "10GB", "HD"]
+        }, {
+            id: 3,
+            title: "CP 3-4",
+            image: "https://files.catbox.moe/bmyj6o.webp",
+            previewVideo: "https://files.catbox.moe/etvjuu.mp4",
+            description: "08-12Y",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 28,
+            stock: 89,
+            features: ["EXCLUSIVE", "PREMIUM", "600+ FILES", "15GB", "4K"]
+        }, {
+            id: 4,
+            title: "NEW AMELIA ",
+            image: "https://files.catbox.moe/fxyfv0.webp",
+            previewVideo: "https://files.catbox.moe/lsr5t1.MP4",
+            description: "The ultimate content.",
+            originalPrice: "$70",
+            price: "$35",
+            discount: "-50%",
+            purchases: 15,
+            stock: 98,
+            features: ["EXCLUSIVE", "PREMIUM", "100+ FILES", "2GB", "HD"]
+        }, {
+            id: 5,
+            title: "MOM SON",
+            image: "https://files.catbox.moe/p58e1d.webp",
+            previewVideo: "https://videotourl.com/videos/1788779256536-28cdbe73-4be1-4312-a45a-eccc3ca6c40e.mp4",
+            description: "PEDOM MOM.",
+            originalPrice: "$80",
+            price: "$40",
+            discount: "-50%",
+            purchases: 67,
+            stock: 75,
+            features: ["PEDOM MOM", "300+ FILES", "16GB", "HD"]
+        }, {
+            id: 6,
+            title: "LIZZY AND BROTHER",
+            image: "https://files.catbox.moe/ilo8hq.webp",
+            previewVideo: "https://videotourl.com/videos/1788779393615-397993c0-aa81-44ca-a8aa-3f07b9ee7294.mp4",
+            description: "SIS AND BRO, BLACKMAIL VIDEOS .",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 33,
+            stock: 98,
+            features: ["PREMIUM", "500+ FILES", "21GB", "HD"]
+        }, {
+            id: 7,
+            title: "IVANKA AND BROTHER",
+            image: "https://files.catbox.moe/suljhn.webp",
+            previewVideo: "https://files.catbox.moe/658bic.mp4",
+            description: "BEST IVANKA AND BROTHER",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 9,
+            stock: 2,
+            features: ["EXCLUSIVE", "PREMIUM", "1500+ FILES", "12GB", ]
+        }, {
+            id: 8,
+            title: "DARKZADIEE",
+            image: "https://files.catbox.moe/d5y538.webp",
+            previewVideo: "https://files.catbox.moe/pzsacu.mp4",
+            description: "TIKTOK FAMOUS.",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-49%",
+            purchases: 52,
+            stock: 11,
+            features: ["300+ FILES", "15GB", "HD"]
+        }, {
+            id: 9,
+            title: "DESIREE GARCIA",
+            image: "https://files.catbox.moe/z9mlxv.webp",
+            previewVideo: "https://files.catbox.moe/2exe3n.mp4",
+            description: "VIP access to exclusive content library.",
+            originalPrice: "$200",
+            price: "$99",
+            discount: "-50%",
+            purchases: 43,
+            stock: 346,
+            features: ["EXCLUSIVE", "VIP", "100+ FILES", "6GB", ]
+        }, {
+            id: 10,
+            title: "AYUMI TEEN",
+            image: "https://files.catbox.moe/legzd7.jpg",
+            previewVideo: "https://files.catbox.moe/zqhyim.mp4",
+            description: "RARE CONTENT.",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 21,
+            stock: 98,
+            features: ["9GB"]
+        }, {
+            id: 11,
+            title: "BLOWJOB TEENS",
+            image: "https://files.catbox.moe/lv8b71.jpg",
+            previewVideo: "https://videotourl.com/videos/1788781110127-0b85180f-6373-448d-b68f-4ed1f3d463e6.mp4",
+            description: "Complete collection.",
+            originalPrice: "$70",
+            price: "$35",
+            discount: "-50%",
+            purchases: 73,
+            stock: 18,
+            features: ["350+ FILES", "10GB", ]
+        }, {
+            id: 12,
+            title: "BLACK GIRLS",
+            image: "https://files.catbox.moe/qs51un.jpg",
+            previewVideo: "https://videotourl.com/videos/1788781378651-6f1dc2e8-7b0d-46ec-bba9-2550034e904b.mp4",
+            description: "content pack.",
+            originalPrice: "$70",
+            price: "$35",
+            discount: "-50%",
+            purchases: 38,
+            stock: 78,
+            features: ["450+ FILES", "15GB", ]
+        }, {
+            id: 13,
+            title: "PREMIUM CP",
+            image: "https://files.catbox.moe/fsaol4.jpg",
+            previewVideo: "https://videotourl.com/videos/1788781566659-8acae01e-d154-40c7-84e0-dcd457f5a368.mp4",
+            description: "PREMIUM content collection.",
+            originalPrice: "$100",
+            price: "$50",
+            discount: "-50%",
+            purchases: 17,
+            stock: 97,
+            features: ["PREMIUM", "550+ FILES", "9GB"]
+        }, {
+            id: 14,
+            title: "FATHER AND DAUGHTER",
+            image: "https://files.catbox.moe/0pkbos.jpg",
+            previewVideo: "https://videotourl.com/videos/1788781775303-d42fb14c-82c3-473d-ba20-9ac5d28a1c1a.mp4",
+            description: "PEDOM FATHER .",
+            originalPrice: "$80",
+            price: "$40",
+            discount: "-50%",
+            purchases: 25,
+            stock: 10,
+            features: ["400+ FILES", "7GB", ]
+        }, {
+            id: 15,
+            title: "MEGA SEX CP",
+            image: "https://files.catbox.moe/56e8vq.jpg",
+            previewVideo: "https://videotourl.com/videos/1788782033765-93923845-03db-4af2-92e9-0618c4513dee.mp4",
+            description: "FAMILI CP COLLECTION.",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 44,
+            stock: 72,
+            features: ["300+ FILES", "10GB", ]
+        }, {
+            id: 16,
+            title: "ALL CP",
+            image: "https://files.catbox.moe/b37xde.webp",
+            previewVideo: "https://files.catbox.moe/f6yreo.mp4",
+            description: "ALL CP.",
+            originalPrice: "$199",
+            price: "$100",
+            discount: "-50%",
+            purchases: 31,
+            stock: 87,
+            features: ["5000+ FILES", "120GB", ]
+        }, {
+            id: 17,
+            title: "ANXIOUS PANDA",
+            image: "https://files.catbox.moe/6439r5.webp",
+            previewVideo: "https://videotourl.com/videos/1788788328439-edb6706d-2cc5-426d-8d7b-1ca5da638562.mp4",
+            description: "Premium collection.",
+            originalPrice: "$110",
+            price: "$55",
+            discount: "-50%",
+            purchases: 12,
+            stock: 4,
+            features: ["EXCLUSIVE", "600+ FILES", "50GB", "4K"]
+        }, {
+            id: 18,
+            title: "BABY ASHLEE",
+            image: "https://files.catbox.moe/vano24.webp",
+            previewVideo: "https://videotourl.com/videos/1788788459087-13f35c88-1429-46bb-9b4b-46fc41df667a.mp4",
+            description: "LEAKS GIRL.",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-50%",
+            purchases: 58,
+            stock: 14,
+            features: ["PRO", "PREMIUM", "200+ FILES", "15GB", "HD"]
+        }, {
+            id: 19,
+            title: "SNAPGOD FULL ED",
+            image: "https://files.catbox.moe/k2s1qv.webp",
+            previewVideo: "https://videotourl.com/videos/1788788866780-ff662cbd-d727-4356-8615-ea8bb56a7c98.mp4",
+            description: "HOT collection.",
+            originalPrice: "$120",
+            price: "$60",
+            discount: "-50%",
+            purchases: 82,
+            stock: 20,
+            features: ["1500+ FILES", "80GB"]
+        }, {
+            id: 20,
+            title: "OMEGLE",
+            image: "https://files.catbox.moe/1hlhak.webp",
+            previewVideo: "https://videotourl.com/videos/1788789011295-0615384c-d020-497d-b1b8-491daaa7161c.mp4",
+            description: "Exclusive  collection.",
+            originalPrice: "$110",
+            price: "$55",
+            discount: "-48%",
+            purchases: 95,
+            stock: 25,
+            features: [, "100+ FILES", "55GB", "HD"]
+        }, {
+            id: 21,
+            title: "TEENS HIGHSCHOOL ",
+            image: "https://files.catbox.moe/c2kok1.webp",
+            previewVideo: "https://videotourl.com/videos/1788789297041-cf018427-543c-4174-aeaf-1b8a4cb46ed5.mp4",
+            description: "Premium collection.",
+            originalPrice: "$80",
+            price: "$40",
+            discount: "-51%",
+            purchases: 63,
+            stock: 16,
+            features: ["500+ FILES", "10GB"]
+        }, {
+            id: 22,
+            title: "13-17 TEENS",
+            image: "https://files.catbox.moe/6r6wcu.png",
+            previewVideo: "https://files.catbox.moe/ysz6qq.mp4",
+            description: "TEEN .",
+            originalPrice: "$70",
+            price: "$35",
+            discount: "-50%",
+            purchases: 78,
+            stock: 22,
+            features: ["BEST TEENS", "200+ FILES", "9.8GB"]
+        }, {
+            id: 23,
+            title: "IZZY",
+            image: "https://files.catbox.moe/iz7jzc.webp",
+            previewVideo: "https://files.catbox.moe/ewu0o5.mp4",
+            description: "ZOO TEENS.",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-50%",
+            purchases: 36,
+            stock: 87,
+            features: ["300+ FILES", "8GB", ]
+        }, {
+            id: 24,
+            title: "RAP3",
+            image: "https://files.catbox.moe/4qaua7.png",
+            previewVideo: "https://videotourl.com/videos/1788790906193-82f96d8f-0b20-4877-848b-264db3bb0c5f.mp4",
+            description: ".",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 19,
+            stock: 50,
+            features: ["400+ FILES", "10GB"]
+        }, {
+            id: 25,
+            title: "NEW PYT STUFF",
+            image: "https://files.catbox.moe/74lnul.png",
+            previewVideo: "https://videotourl.com/videos/1788791547996-1e9c38bc-65ea-4b6a-beb8-b76b84f422c9.mp4",
+            description: "BEST FOLDER  PYT.",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 29,
+            stock: 76,
+            features: ["PREMIUM", "550+ FILES", "20GB"]
+        }, {
+            id: 26,
+            title: "SAVANNAH",
+            image: "https://files.catbox.moe/kaejkq.webp",
+            previewVideo: "https://videotourl.com/videos/1788792889420-6df91a3a-0849-497f-af34-48e8bdb55793.mp4",
+            description: "Social media content pack.",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-50%",
+            purchases: 71,
+            stock: 19,
+            features: ["250+ FILES", "10GB", "HD"]
+        }, {
+            id: 28,
+            title: "MONKEY APP",
+            image: "https://files.catbox.moe/gal5a6.jpg",
+            previewVideo: "https://videotourl.com/videos/1788795145491-7d1f2fdc-57a3-45c4-a772-13f0cc2dfe8e.mp4",
+            description: "Business content collection.",
+            originalPrice: "$90",
+            price: "$45",
+            discount: "-50%",
+            purchases: 14,
+            stock: 49,
+            features: ["500+ FILES", "45GB"]
+        }, {
+            id: 29,
+            title: "REAL INCEST",
+            image: "https://files.catbox.moe/6iuyoe.jpg",
+            previewVideo: "https://videotourl.com/videos/1788795420219-66ab5bcb-529c-4541-bdc2-d6d45486b829.mp4",
+            description: "⚜️REAL INCEST⚜️",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-50%",
+            purchases: 54,
+            stock: 64,
+            features: ["500+ FILES", "22GB", ]
+        }, {
+            id: 30,
+            title: "BELLE DELPHINE",
+            image: "https://files.catbox.moe/wn3xsm.webp",
+            previewVideo: "https://videotourl.com/videos/1788795624698-bec159d8-9e28-4085-940c-1c18f7483e23.mp4",
+            description: "BELLE DELPHINE collection.",
+            originalPrice: "$75",
+            price: "$35",
+            discount: "-49%",
+            purchases: 22,
+            stock: 67,
+            features: ["400+ FILES", "10GB"]
+        }, {
+            id: 31,
+            title: "AVA",
+            image: "https://files.catbox.moe/3dzzzw.webp",
+            previewVideo: "https://videotourl.com/videos/1788795872725-eabee406-a90a-4b50-955c-5ec377c88c0f.mp4",
+            description: "AVA TEENS.",
+            originalPrice: "$60",
+            price: "$30",
+            discount: "-50%",
+            purchases: 37,
+            stock: 59,
+            features: ["150+ FILES", "8GB", "HD"]
+        }, {
+            id: 32,
+            title: "JESS",
+            image: "https://files.catbox.moe/xq7s8u.webp",
+            previewVideo: "https://videotourl.com/videos/1788796012914-4acf31ef-5698-4c49-94de-db2f658c596a.mp4",
+            description: "JESS collection.",
+            originalPrice: "$80",
+            price: "$40",
+            discount: "-50%",
+            purchases: 16,
+            stock: 58,
+            features: ["100+ FILES", "10GB", "HD"]
+        }, {
+            id: 33,
+            title: "SNAPCHAT",
+            image: "https://files.catbox.moe/mzroyo.webp",
+            previewVideo: "https://videotourl.com/videos/1788796186869-734d4713-0bc0-42fb-aa88-5f8f37612b83.mp4",
+            description: "LEAKS SNAPCHAT.",
+            originalPrice: "$111",
+            price: "$55",
+            discount: "-51%",
+            s: 49,
+            stock: 63,
+            features: ["800+ FILES", "50GB", "HD"]
+        }, {
+            id: 34,
+            title: "BLACKMAIL",
+            image: "https://files.catbox.moe/rnbz2x.webp",
+            previewVideo: "https://videotourl.com/videos/1788796374167-1dc176dd-57d0-4097-a51e-6ed1ecd7df38.mp4",
+            description: "Animation content kit.",
+            originalPrice: "$100",
+            price: "$50",
+            discount: "-50%",
+            s: 27,
+            stock: 87,
+            features: ["1000+ FILES", "100GB", ]
+        }, ];
+
+
+        //telegram function , adm slay prog
+
+        function getTelegramLink(title, price) {
+            showPaymentPopup(title, price);
+            return "#";
+        }
+
+        function showPaymentPopup(title, price) {
+
+            const oldPopup = document.getElementById("payment-popup-overlay");
+            if (oldPopup) oldPopup.remove();
+
+            const overlay = document.createElement("div");
+            overlay.id = "payment-popup-overlay";
+            overlay.className = "payment-overlay";
+
+            overlay.innerHTML = `
+        <div class="payment-popup">
+
+            <button class="payment-close" id="close-payment-popup">
+                ×
+            </button>
+
+            <h2>Choose Payment Method</h2>
+
+            <p>Select your preferred payment method:</p>
+
+            <div class="payment-options">
+
+                <button class="payment-option paypal"
+                    data-method="PayPal">
+
+                    <img
+                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F9bd464e1-3130-4689-89d3-f9037ed2993d-paypal.jpg"
+                        alt="PayPal"
+                    >
+
+                    <span>PayPal</span>
+
+                </button>
+
+
+                <button class="payment-option crypto"
+                    data-method="Crypto">
+
+                    <img
+                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fa283b6a9-6311-49d5-ab20-7cc92539319c-BTC-USDT-300x300-1.png"
+                        alt="Crypto"
+                    >
+
+                    <span>Crypto</span>
+
+                </button>
+
+
+                <button class="payment-option binance"
+                    data-method="Binance Gift Card">
+
+                    <img
+                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F22f82f43-85a4-4283-9ae8-af37902b8994-binance_imagem.png"
+                        alt="Binance Gift Card"
+                    >
+
+                    <span>Binance Gift Card</span>
+
+                </button>
+
+
+                <button class="payment-option cashapp"
+                    data-method="Cash App">
+
+                    <img
+                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fb135f872-6552-4308-96bc-f754c454f668-cash_app.png"
+                        alt="Cash App"
+                    >
+
+                    <span>Cash App</span>
+
+                </button>
+
+                 <button class="payment-option stripe"
+                    data-method="Stripe">
+
+                    <img
+                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F9a7dd0b1-4124-48f5-a2cf-5822381c5e8c-stripe_logo.png"
+                        alt="Stripe"
+                    >
+
+                    <span>stripe</span>
+
+                </button>
+
+            </div>
+
+        </div>
+    `;
+
+            document.body.appendChild(overlay);
+
+
+            // Fechar popup
+            document.getElementById("close-payment-popup").onclick = function() {
+                overlay.remove();
+            };
+
+
+            // Escolher método
+            overlay.querySelectorAll(".payment-option").forEach(button => {
+
+                button.onclick = function() {
+
+                    const method = this.dataset.method;
+
+                    const message =
+                        `Hi 👋\n` +
+                        `I want to purchase:\n` +
+                        `📦 Content: ${title}\n` +
+                        `💰 Price: ${price}\n` +
+                        `I'll pay with ${method}.`;
+
+                    const telegramURL =
+                        `https://telegram.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(message)}`;
+
+                    window.location.href = telegramURL;
+                };
+
+            });
+        }
+
+
+
+        // ============================================================
+        // ===== SHUFFLE =====
+        // ============================================================
+        function shuffleArray(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        // ============================================================
+        // ===== RENDER =====
+        // ============================================================
+        const contentGrid = document.getElementById('contentGrid');
+        const normalGrid = document.getElementById('normalGrid');
+        const countDisplay = document.getElementById('countDisplay');
+        const searchInput = document.getElementById('searchInput');
+
+        const highlightItem = allItems.find(item => item.id === 1);
+        const normalItems = allItems.filter(item => item.id !== 1);
+
+        function renderHighlightCard() {
+            if (!highlightItem) return;
+            contentGrid.innerHTML = `
+        <div class="card-highlight">
+          <div class="card-media" data-id="${highlightItem.id}">
+            <img src="${highlightItem.image}" alt="${highlightItem.title}" loading="lazy" />
+            <div class="play-overlay">
+              <i class="fa-solid fa-play-circle"></i>
+            </div>
+            <span class="badge-discount">${highlightItem.discount}</span>
+            <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> ${highlightItem.stock} left</span>
+            <span class="highlight-badge">⭐ DESTAQUE</span>
+          </div>
+          <div class="card-body">
+            <div class="title-row">
+              <h3>${highlightItem.title}</h3>
+              <span class="discount-text">${highlightItem.discount}</span>
+            </div>
+            <div class="stats">
+              <span><i class="fa-solid fa-shopping-bag"></i> ${highlightItem.purchases} purchases</span>
+            </div>
+            <p class="description">${highlightItem.description}</p>
+            <div class="features">
+              ${highlightItem.features.map(f => `<span><i class="fa-solid fa-circle"></i> ${f}</span>`).join('')}
+            </div>
+            <div class="price-row">
+              <span class="original">${highlightItem.originalPrice}</span>
+              <span class="current">${highlightItem.price}</span>
+            </div>
+            <div class="actions">
+              <button class="btn btn-preview" data-id="${highlightItem.id}">
+                <i class="fa-solid fa-play"></i> PREVIEW
+              </button>
+              <button class="btn btn-buy" data-id="${highlightItem.id}">
+                <i class="fa-brands fa-telegram"></i> BUY NOW ${highlightItem.price}
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+        }
+
+        const shuffledNormals = shuffleArray([...normalItems]);
+
+        function renderNormalCards(filter = '') {
+            let filtered = shuffledNormals.filter(item =>
+                item.title.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            normalGrid.innerHTML = filtered.map((item, index) => `
+          <div class="card" style="animation-delay:${(index % 12) * 0.03}s" data-title="${item.title.toLowerCase()}">
+            <div class="card-media" data-id="${item.id}">
+              <img src="${item.image}" alt="${item.title}" loading="lazy" />
+              <div class="play-overlay">
+                <i class="fa-solid fa-play-circle"></i>
+              </div>
+              <span class="badge-discount">${item.discount}</span>
+              <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> ${item.stock} left</span>
+            </div>
+            <div class="card-body">
+              <div class="title-row">
+                <h3>${item.title}</h3>
+                <span class="discount-text">${item.discount}</span>
+              </div>
+              <div class="stats">
+                <span><i class="fa-solid fa-shopping-bag"></i> ${item.purchases} purchases</span>
+              </div>
+              <p class="description">${item.description}</p>
+              <div class="features">
+                ${item.features.map(f => `<span><i class="fa-solid fa-circle"></i> ${f}</span>`).join('')}
+              </div>
+              <div class="price-row">
+                <span class="original">${item.originalPrice}</span>
+                <span class="current">${item.price}</span>
+              </div>
+              <div class="actions">
+                <button class="btn btn-preview" data-id="${item.id}">
+                  <i class="fa-solid fa-play"></i> PREVIEW
+                </button>
+                <button class="btn btn-buy" data-id="${item.id}">
+                  <i class="fa-brands fa-telegram"></i> BUY NOW ${item.price}
+                </button>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+            const totalFiltered = filtered.length;
+            countDisplay.textContent = `${totalFiltered} ${totalFiltered === 1 ? 'title' : 'titles'}`;
+        }
+
+        // ============================================================
+        // ===== SEARCH =====
+        // ============================================================
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                renderNormalCards(e.target.value);
+            });
+        }
+
+        // ============================================================
+        // ===== MODAL CORRIGIDO - SEM ERROS =====
+        // ============================================================
+        const modal = document.getElementById('modal');
+        const modalClose = document.getElementById('modalClose');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalOriginal = document.getElementById('modalOriginal');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalVideo = document.getElementById('modalVideo');
+        const modalBuy = document.getElementById('modalBuy');
+        let currentItem = null;
+        let isVideoLoaded = false;
+
+        function openModal(item) {
+            currentItem = item;
+
+            // Atualiza informações
+            modalTitle.textContent = item.title;
+            modalPrice.textContent = item.price;
+            modalOriginal.textContent = item.originalPrice || item.originalPrice;
+            modalDesc.textContent = item.description;
+
+            // ===== RECARREGA O VÍDEO CORRETAMENTE =====
+            // Pausa o vídeo atual
+            modalVideo.pause();
+
+            // Remove todas as fontes antigas
+            while (modalVideo.firstChild) {
+                modalVideo.removeChild(modalVideo.firstChild);
+            }
+
+            // Cria nova fonte
+            const source = document.createElement('source');
+            source.src = item.previewVideo || '';
+            source.type = 'video/mp4';
+            modalVideo.appendChild(source);
+
+            // Recarrega o vídeo com um pequeno delay
+            modalVideo.load();
+
+            // Abre o modal
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+
+            // Tenta dar play após carregar
+            setTimeout(() => {
+                modalVideo.play().catch(() => {
+                    // Se não conseguir dar play, deixa o usuário clicar no play
+                    console.log('Clique no play para reproduzir.');
+                });
+            }, 500);
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+            // Limpa a fonte para liberar memória
+            while (modalVideo.firstChild) {
+                modalVideo.removeChild(modalVideo.firstChild);
+            }
+            const source = document.createElement('source');
+            source.src = '';
+            source.type = 'video/mp4';
+            modalVideo.appendChild(source);
+            modalVideo.load();
+            document.body.style.overflow = '';
+            currentItem = null;
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+        });
+
+        modalBuy.addEventListener('click', () => {
+            if (currentItem) {
+                getTelegramLink(currentItem.title, currentItem.price);
+            }
+        });
+
+        // ============================================================
+        // ===== EVENTOS =====
+        // ============================================================
+        function handleCardClick(e, gridElement) {
+            const previewBtn = e.target.closest('.btn-preview');
+            const buyBtn = e.target.closest('.btn-buy');
+            const media = e.target.closest('.card-media');
+
+            if (media && !e.target.closest('.btn')) {
+                const id = parseInt(media.dataset.id);
+                const item = allItems.find(i => i.id === id);
+                if (item) openModal(item);
+                return;
+            }
+
+            if (previewBtn) {
+                const id = parseInt(previewBtn.dataset.id);
+                const item = allItems.find(i => i.id === id);
+                if (item) openModal(item);
+                return;
+            }
+
+            if (buyBtn) {
+                const id = parseInt(buyBtn.dataset.id);
+                const item = allItems.find(i => i.id === id);
+                if (item) {
+                    (getTelegramLink(item.title, item.price));
+                }
+                return;
+            }
+        }
+
+        contentGrid.addEventListener('click', (e) => handleCardClick(e, contentGrid));
+        normalGrid.addEventListener('click', (e) => handleCardClick(e, normalGrid));
+
+        // ============================================================
+        // ===== INIT =====
+        // ============================================================
+        renderHighlightCard();
+        renderNormalCards('');
+    </script>
+    <!-- BOTÃO FLUTUANTE DO TELEGRAM -->
+
+    <style>
+        .telegram-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: #229ED9;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 7px 16px 7px 7px;
+            border-radius: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+            transition: all 0.4s ease;
+        }
+
+        /* Ícone do Telegram */
+
+        .telegram-btn img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Efeito ao passar o rato */
+
+        .telegram-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+        }
+
+        /* Quando fizer scroll, vai para baixo */
+
+        .telegram-btn.scrolled {
+            top: auto;
+            bottom: 20px;
+        }
+
+        /* Ajuste para telemóveis */
+
+        @media (max-width: 600px) {
+            .telegram-btn {
+                top: 15px;
+                right: 15px;
+                padding: 6px 13px 6px 6px;
+                font-size: 13px;
+            }
+            .telegram-btn img {
+                width: 27px;
+                height: 27px;
+            }
+            .telegram-btn.scrolled {
+                top: auto;
+                bottom: 15px;
+            }
+        }
+
+        /* ===== Mobile: cards/labels como no projeto HOT (≤575.98px) ===== */
+        @media (max-width: 575.98px) {
+            .card-body {
+                padding: 6.4px 9.6px 9.6px;
+            }
+            .card-body .title-row h3 {
+                font-size: 12.8px;
+            }
+            .card-body .stats {
+                font-size: 10.4px;
+            }
+            .card-body .description {
+                font-size: 12px;
+                line-height: 1.5;
+                margin-top: 0;
+            }
+            /* Tags todas numa só linha — cartões ficam com a mesma altura */
+            .card-body .features {
+                flex-wrap: nowrap;
+                gap: 3.2px;
+                margin-top: 6px;
+                margin-bottom: 8px;
+                min-width: 0;
+            }
+            .card-body .features span {
+                font-size: clamp(6.7px, 1.9vw, 7.7px);
+                padding: 1px 3px;
+                gap: 3px;
+                min-width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .card-body .features span i {
+                display: none;
+            }
+            /* Preço+botões encostados ao fundo — mesmo nível em todos os cartões */
+            .card-body .price-row {
+                margin-top: auto;
+            }
+            .card-body .price-row .original {
+                font-size: 11.52px;
+            }
+            .card-body .price-row .current {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+
+    <a href="https://t.me/alcontentes" target="_blank" rel="noopener noreferrer" class="telegram-btn scrolled" id="telegramBtn">
+
+        <!-- COLOQUE AQUI O LINK DA SUA IMAGEM -->
+        <img src="./VIP CONTENT · Premium Digital Content_files/thumb_show.php" alt="Telegram">
+
+        <span>DM ME FOR MENU</span>
+
+    </a>
+
+
+    <script>
+        window.addEventListener("scroll", function() {
+
+            const telegramBtn = document.getElementById("telegramBtn");
+
+            if (window.scrollY > 150) {
+                telegramBtn.classList.add("scrolled");
+            } else {
+                telegramBtn.classList.remove("scrolled");
+            }
+
+        });
+    </script>
+
+
+
+</body></html>
