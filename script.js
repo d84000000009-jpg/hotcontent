@@ -506,10 +506,10 @@
                 <button class="payment-option paypal"
                     data-method="PayPal">
 
-                    <img
-                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F9bd464e1-3130-4689-89d3-f9037ed2993d-paypal.jpg"
-                        alt="PayPal"
-                    >
+                    <svg class="pay-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" fill="#ffffff"/>
+                        <path fill="#003087" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.739-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/>
+                    </svg>
 
                     <span>PayPal</span>
 
@@ -519,10 +519,10 @@
                 <button class="payment-option crypto"
                     data-method="Crypto">
 
-                    <img
-                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fa283b6a9-6311-49d5-ab20-7cc92539319c-BTC-USDT-300x300-1.png"
-                        alt="Crypto"
-                    >
+                    <svg class="pay-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" fill="#F7931A"/>
+                        <path fill="#ffffff" d="M15.9 10.3c-.2-1.3-1.3-2-2.7-2.4l.6-2.3-1.4-.35-.55 2.2c-.36-.09-.73-.17-1.1-.26l.56-2.22-1.4-.35-.6 2.3c-.3-.07-.6-.14-.9-.21v-.01l-1.93-.48-.37 1.48s1.03.24 1 .25c.56.14.66.51.65.8l-.65 2.6c.04.01.09.02.14.04l-.14-.04-.9 3.6c-.07.17-.24.42-.63.33.01.02-1-.25-1-.25L5.3 16.98l1.83.46c.34.09.68.18 1 .26l-.6 2.4 1.4.35.6-2.3c.38.1.76.2 1.13.29l-.6 2.36 1.4.35.6-2.4c2.4.45 4.2.27 4.95-1.9.6-1.73-.03-2.73-1.3-3.38.93-.22 1.63-.83 1.82-2.08zm-3.24 4.53c-.43 1.73-3.35.79-4.3.56l.76-3.06c.95.24 4.02.7 3.54 2.5zm.43-4.56c-.4 1.57-2.83.77-3.62.57l.7-2.79c.79.2 3.34.56 2.92 2.22z"/>
+                    </svg>
 
                     <span>Crypto</span>
 
@@ -532,10 +532,16 @@
                 <button class="payment-option binance"
                     data-method="Binance Gift Card">
 
-                    <img
-                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F22f82f43-85a4-4283-9ae8-af37902b8994-binance_imagem.png"
-                        alt="Binance Gift Card"
-                    >
+                    <svg class="pay-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" fill="#ffffff"/>
+                        <g fill="#F3BA2F">
+                            <path d="M12 5.6l2.4 2.42-2.4 2.42L9.6 8.02z"/>
+                            <path d="M7.06 10.14L9.46 12.56 7.06 14.98 4.66 12.56z"/>
+                            <path d="M16.94 10.14l2.4 2.42-2.4 2.42-2.4-2.42z"/>
+                            <path d="M12 14.68l2.4 2.42L12 19.52l-2.4-2.42z"/>
+                            <path d="M9.66 10.22l2.34-2.36 2.34 2.36-2.34 2.36z"/>
+                        </g>
+                    </svg>
 
                     <span>Binance Gift Card</span>
 
@@ -545,10 +551,10 @@
                 <button class="payment-option cashapp"
                     data-method="Cash App">
 
-                    <img
-                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2Fb135f872-6552-4308-96bc-f754c454f668-cash_app.png"
-                        alt="Cash App"
-                    >
+                    <svg class="pay-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" fill="#ffffff"/>
+                        <path fill="#00D632" d="M15.1 13.9c-.16.2-.4.36-.72.44l-.24.06c-.18.04-.26.08-.26.17 0 .12.14.24.44.24.42 0 .8-.14 1.1-.4.1-.1.2-.06.26.04l.4.58c.06.08.02.2-.06.3-.42.4-.94.6-1.58.6-.7 0-1.2-.36-1.2-.92 0-.3.14-.56.44-.72l.3-.16c.2-.1.28-.16.28-.25 0-.12-.12-.2-.32-.2-.26 0-.54.1-.78.3-.08.08-.18.04-.24-.04l-.4-.56c-.06-.1-.02-.2.06-.3.4-.4.9-.6 1.5-.6.64 0 1.06.34 1.06.86 0 .26-.12.48-.4.64l-.2.1zM9.3 9.2H7.6c-.14 0-.24.1-.26.24L6.2 14.6c-.02.1.06.2.16.2h.66c.1 0 .2-.08.22-.18l.3-1.5c.02-.12.12-.2.22-.2h.9c1.1 0 1.9-.44 2.14-1.7.02-.06.02-.12.02-.18 0-.7-.36-1.02-.9-1.02-.56 0-.94.24-1.02.96zm.16 1.7c-.08.56-.46.72-.98.72h-.4l.28-1.36c.02-.1.1-.16.2-.16h.2c.42 0 .66.16.7.6 0 .02 0 .1 0 .2z"/>
+                    </svg>
 
                     <span>Cash App</span>
 
@@ -557,10 +563,10 @@
                  <button class="payment-option stripe"
                     data-method="Stripe">
 
-                    <img
-                        src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F9a7dd0b1-4124-48f5-a2cf-5822381c5e8c-stripe_logo.png"
-                        alt="Stripe"
-                    >
+                    <svg class="pay-icon" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
+                        <circle cx="12" cy="12" r="12" fill="#ffffff"/>
+                        <path fill="#635BFF" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/>
+                    </svg>
 
                     <span>stripe</span>
 
@@ -590,14 +596,16 @@
                     const message =
                         `Hi 👋\n` +
                         `I want to purchase:\n` +
-                        `📦 Content: ${title}\n` +
+                        `📦 Content/product: ${title}\n` +
                         `💰 Price: ${price}\n` +
                         `I'll pay with ${method}.`;
 
                     const telegramURL =
                         `https://telegram.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(message)}`;
 
-                    window.location.href = telegramURL;
+                    // escolher o método já conduz ao Telegram (nova aba, dentro do gesto do utilizador)
+                    window.open(telegramURL, "_blank", "noopener");
+                    overlay.remove();
                 };
 
             });
